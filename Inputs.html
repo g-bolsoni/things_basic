@@ -10,22 +10,65 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      <form action="" method="get" class="form-group">
-          <fieldset >
+      <form action="" method="POST" class="form-group">
+          <!-- <fieldset >
             <legend>Endereço</legend>
 
             <datalist id="teste">
                 <option>morango</option>
                 <option>kiwi</option>
             </datalist>
-            
-            <datalist id="color">
-              <option>#ff0000</option>
-              <option>#6A1B9A</option>
+             -->
+            <datalist id="email">
+              <option>camila@gmail.com.br</option>
+              <option>giovanebolsoni2@gmail.com</option>
             </datalist>
+            <datalist id="datalist">
+              <option>https://www.instagram.com/giovane_bolsoni/</option>
+              <option>https://www.linkedin.com/in/giovane-bolsoni/</option>
+              <option>https://github.com/g-bolsoni</option>
+            </datalist>
+           
             
             <!--text-->
             <input class="form-control" type="text" autocomplete="cc-name" placeholder="Nome" autofocus></br>
+            <!--Password-->
+            <input type="password" placeholder="Senha" class="form-control"
+              minlength="5" maxlength="8" size="8" 
+              pattern="[0-9a-fA-F]{4,8}"
+              title="Coloque Hex no minimo 4 caracteres e no maximo 8 caracteres"
+              required
+              inputmode="numeric"
+              autocomplete="on off new-password"
+            />
+            
+            <!-- Email -->
+            <input type="email"  class="form-control" placeholder="E-mail" 
+              value="giovane@giovane.com" 
+              required
+              multiple
+              minlength="8"
+              maxlength="255"
+              pattern=".+@gmail\.com\.br" title="Somente g-mail please"
+              list="email"
+            />
+            
+            <!--URL--> 
+            <input type="url" class="form-control" placeholder="URL" 
+              value=""
+              required
+              minlength="15"
+              pattern=".+\.com.*" title="Somente dominios .com.br serão aceitos"
+              list="datalist"
+              spellcheck="false"
+            />
+             
+            <!--File-->
+            <input type="file"  enctype="multipart/form-data" class="form-control"
+              accept=".doc, .js,.html, .css, image/*"
+              multiple
+            >
+            <!---->
             <!--color-->
             <input type="color" class="form-control" list="teste" >
             <!--Rua-->
