@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Formulário</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./forms.css"/>
+  </head>
+  <body>
+      
+    <form method="post" class="form-group form" id="form">
+        <fieldset class="form-group fieldset">
+            <legend>Contato</legend>
+            <div class="all_inputs">   
+              
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control inputs" 
+                autocomplete="name" placeholder="Your Name" 
+                name="nome" id="nome" required
+              />
+
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control inputs"
+                autocomplete="email" placeholder="Your Best E-mail"
+                name="email" id="email" required
+              />
+
+              <label for="message">Mensagem</label>
+              <textarea class="form-control inputs" 
+                id="message" cols="30" rows="5"
+                placeholder="Your Message" required
+              ></textarea>
+            </div>
+
+            <button  id="button" class="btn bottom" 
+              type="submit" onclick="send()"
+
+              >Send</button>
+        </fieldset>
+    </form>
+
+    <!-- Optional JavaScript -->
+    <script src="forms.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+  </body>
+</html>
