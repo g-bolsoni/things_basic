@@ -15,15 +15,27 @@
         <fieldset class="form-group">
             <legend>Contato</legend>
 
-            <label>Nome</label>
-            <input class="form-control" type="text" name="nome" id="nome">
+            <label for="name">Name</label>
+            <input class="form-control" autocomplete="additional-name" 
+              autofocus type="text" name="name" id="name" required 
+              placeholder="Your Name" 
+            />
+
             <br/>
-            <label>E-mail</label>
-            <input type="email" class="form-control" name="" id="">
+
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" name="email" id="email"
+              required minlength="8" placeholder="youremail@yourdomain.com.br"
+              pattern=".+@gmail\.com.*" title="Please, insert egual the example" 
+            />
             <br/>
-            <label>Mensagem</label>
-            <textarea class="form-control" cols="" rows=""></textarea>
+
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" cols="20" rows="10"
+              required wrap="off" placeholder="Your best message !"
+            ></textarea>
             <br/>
+
             <button class="btn btn-success" type="submit">Send</button>
         </fieldset>
     </form>
