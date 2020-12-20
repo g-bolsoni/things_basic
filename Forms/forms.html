@@ -1,49 +1,49 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <title>Formulário</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!doctype html>
+  <html lang="pt-br">
+    <head>
+      <title>Formulário</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="styles.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body style="background-color: rgb(216, 206, 206);">
-      
-    <form method="post" class="form-group" >
-        <fieldset class="form-group">
-            <legend>Contato</legend>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body class="body">
+      <form method="post" class="form-group form" >
+        <fieldset class="form-group fieldsetFomr">
+          <legend class="legend">Contato</legend>
+          <div class ="all_inputs">
 
-            <label for="name">Name</label>
-            <input class="form-control" autocomplete="additional-name" 
+            <label for="name">Nome</label>
+            <input class="form-control inputs" autocomplete="additional-name" 
               autofocus type="text" name="name" id="name" required 
-              placeholder="Your Name" 
+              placeholder="Nome Completo" 
             />
-
-            <br/>
-
+            
             <label for="email">E-mail</label>
-            <input type="email" class="form-control" name="email" id="email"
+            <input type="email" class="form-control inputs" name="email" id="email"
               required minlength="8" placeholder="youremail@yourdomain.com.br"
               pattern=".+@gmail\.com.*" title="Please, insert egual the example" 
             />
-            <br/>
+            
 
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" cols="20" rows="10"
-              required wrap="off" placeholder="Your best message !"
+            <label for="message">Messagem</label>
+            <textarea class="form-control inputs" id="message" cols="20" rows="5"
+              required wrap="off" placeholder="Digite aqui sua melhor mensagem !"
             ></textarea>
-            <br/>
-
-            <button class="btn btn-success" type="submit">Send</button>
+              
+          </div>
+          <button class="btnMy" type="submit">Enviar</button>
         </fieldset>
-    </form>
+      </form>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+      <!-- Optional JavaScript -->
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+  </html>
